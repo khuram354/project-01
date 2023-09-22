@@ -109,10 +109,120 @@ nav a{
     html{
         font-size: 12px;
     }
-    .logoContainer img {
+    .logoContainer img{
         width: 80px;
     }
     .navbar{
         width: 530px;
+    }
+}
+/* Navbar End */
+
+/* section-1 start */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: yellowgreen; */
+}
+
+.contentBox{
+    width: 45%;
+    padding: 0.3em;
+}
+
+.contentBox h1{
+    font-size: 2.8rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--maincolor);
+}
+
+.shopping{
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.contentBox p{
+    font-size: 0.9rem;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    margin: 0.5em 0;
+}
+
+.btn{
+    width: 35%;
+    padding: 0.6em 1.2em;
+    font-size: 1.1rem;
+    margin-top: 1.5em;
+    border: none;
+    outline: none;
+    background-color: var(--maincolor);
+    color: var(--ternary);
+    border-radius: 4px;
+}
+
+.imgContainer img{
+    max-width: 100%;
+}
+
+/* Media Queries for section-1 */
+@media screen and (max-width: 990px){
+    .container{
+        max-width: 950px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .contentBox {
+        width: 85%;
+    }
+    .contentBox h1 {
+        font-size: 2.2rem;
+        margin-top: 0.5em;
+    }
+    .shopping{
+        font-size: 2.2rem;
+    }
+    .btn {
+        width: 25%;
+        padding: 0.8em;
+        font-size: 1rem;
+    }
+    .imgContainer img{
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 568px){
+    .btn {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 450px){
+    html {
+        font-size: 12px;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .contentBox h1{
+        text-align: center;
+    }
+    .btn{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 300px){
+    .btn{
+        width: 50%;
     }
 }
