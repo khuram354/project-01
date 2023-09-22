@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@300&display=swap');
+
+/* font-family: 'Kaushan Script', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --maincolor: #A91B60;
+    --primary:#FF0080;
+    --secandory:#EC9EC0;
+    --ternary:#EBE0D0;
+    --black:rgba(0,0,0,0.8);
+    --white:#fff;
+}
+
+/* navbar start */
+.navbar{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0,0,0,0.3) 0px 30px 60px -30px;
+}
+
+.logoContainer img{
+    width: 100px;
+    object-fit: contain; /*setting image without losing its aspect ratio*/
+}
+
+nav{
+    width: 40%;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color:var(--maincolor);
+    font-family: 'Raleway', sans-serif;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons .fa-solid{
+    color:var(--maincolor);
+    margin-left: 1em;
+    font-size: 1.1rem;
+}
+
+.icons .fa-bars{
+    display: none;
+}
+
+/* Media Queries for Navbar*/
+@media screen and (max-width: 990px){
+    html{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    html{
+        font-size: 14px;
+    }
+    .navbar{
+        max-width: 670px;
+    }
+    nav ul{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: var(--maincolor);
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 1em;
+        display: none;
+    }
+    nav li{
+        margin-bottom: 1em;
+    }
+    nav a{
+        color:var(--ternary);
+        font-size: 1.2rem;
+    }
+    .icons .fa-solid{
+        font-size: 1.2rem;
+    }
+    .icons .fa-bars{
+        display: block;
+    }
+}
+@media screen and (max-width: 568px){
+    html{
+        font-size: 12px;
+    }
+    .logoContainer img {
+        width: 80px;
+    }
+    .navbar{
+        width: 530px;
+    }
+}
