@@ -9,7 +9,6 @@ font-family: 'Raleway', sans-serif; */
     margin: 0;
     box-sizing: border-box;
 }
-
 :root{
     --maincolor: #A91B60;
     --primary:#FF0080;
@@ -20,70 +19,64 @@ font-family: 'Raleway', sans-serif; */
 }
 
 /* navbar start */
-.navbar {
+.navbar{
     max-width: 1300px;
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0,0,0,0.3) 0px 30px 60px -30px;
+    padding: .5em;
+    box-shadow: rgba(50,50,93,0.25) 0px 50px 100px -20px, rgba(0,0,0,0.3) 0px 30px 60px -30px;
 }
 .logoContainer img{
     width: 100px;
-    object-fit: contain; /*setting image without losing its aspect ratio*/
+    object-fit: contain;
 }
-
 nav{
     width: 40%;
 }
-
 nav ul{
-    list-style-type: none;
     display: flex;
-    align-items: center;
+    list-style: none;
     justify-content: space-between;
+    align-items: center;
 }
-
 nav a{
     text-decoration: none;
     font-size: 1.1rem;
-    color:var(--maincolor);
-    font-family: 'Raleway', sans-serif;
+    color: var(--maincolor);
+    font-family: 'Poppins', sans-serif;
 }
-
 .icons{
     display: flex;
 }
-
 .icons .fa-solid{
-    color:var(--maincolor);
+    color: var(--maincolor);
     margin-left: 1em;
     font-size: 1.1rem;
 }
-
 .icons .fa-bars{
     display: none;
 }
 
-/* Media Queries for Navbar*/
-@media screen and (max-width: 990px){
+/* media queries for .navbar */
+@media screen and (max-width: 990px) {
     html{
         font-size: 15px;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     html{
         font-size: 14px;
     }
     .navbar{
         max-width: 670px;
     }
-    nav ul{
+    .navbar ul{
         position: absolute;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         background-color: var(--maincolor);
         width: 100%;
         display: block;
@@ -95,7 +88,7 @@ nav a{
         margin-bottom: 1em;
     }
     nav a{
-        color:var(--ternary);
+        color: var(--ternary);
         font-size: 1.2rem;
     }
     .icons .fa-solid{
@@ -105,7 +98,7 @@ nav a{
         display: block;
     }
 }
-@media screen and (max-width: 568px){
+@media screen and (max-width: 568px) {
     html{
         font-size: 12px;
     }
@@ -113,12 +106,11 @@ nav a{
         width: 80px;
     }
     .navbar{
-        width: 530px;
+        max-width: 530px;
     }
 }
-/* Navbar End */
 
-/* section-1 start */
+/* section-1 starts */
 .container{
     display: flex;
     align-items: center;
@@ -126,89 +118,82 @@ nav a{
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
-    /* background-color: yellowgreen; */
 }
-
 .contentBox{
     width: 45%;
     padding: 0.3em;
 }
-
 .contentBox h1{
     font-size: 2.8rem;
     font-family: 'Raleway', sans-serif;
     color: var(--maincolor);
 }
-
 .shopping{
     font-size: 3rem;
     font-family: 'Kaushan Script', cursive;
     display: inline-block;
     width: 100%;
-    text-align: center;
+    text-align: right;
 }
-
 .contentBox p{
     font-size: 0.9rem;
     color: var(--black);
     font-family: 'Poppins', sans-serif;
     margin: 0.5em 0;
 }
-
 .btn{
     width: 35%;
-    padding: 0.6em 1.2em;
+    padding: 0.5em 1.3em;
     font-size: 1.1rem;
     margin-top: 1.5em;
     border: none;
     outline: none;
     background-color: var(--maincolor);
     color: var(--ternary);
-    border-radius: 4px;
 }
-
 .imgContainer img{
     max-width: 100%;
 }
 
-/* Media Queries for section-1 */
-@media screen and (max-width: 990px){
+/* media queries for section-1 */
+@media screen and (max-width:990px){
     .container{
         max-width: 950px;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width:768px){
     .container{
         flex-direction: column;
     }
-    .contentBox {
+    .contentBox{
         width: 85%;
     }
-    .contentBox h1 {
+    .contentBox h1{
         font-size: 2.2rem;
         margin-top: 0.5em;
     }
     .shopping{
         font-size: 2.2rem;
+        text-align: center;
     }
-    .btn {
+    .btn{
         width: 25%;
         padding: 0.8em;
         font-size: 1rem;
     }
     .imgContainer img{
-        max-width: 80%;
+        width: 80%;
         display: block;
         margin: 0 auto;
     }
 }
 @media screen and (max-width: 568px){
-    .btn {
+    .btn{
         width: 30%;
     }
 }
 @media screen and (max-width: 450px){
-    html {
+    html{
         font-size: 12px;
     }
     .container{
