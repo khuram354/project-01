@@ -117,7 +117,7 @@ nav a{
     justify-content: space-around;
     max-width: 1300px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 1em;
 }
 .contentBox{
     width: 45%;
@@ -290,5 +290,81 @@ nav a{
     }
     .cardContent h1{
         font-size: 1.2rem;
+    }
+}
+
+/* section-3 starts */
+
+.title h1{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0.5em 0;
+    font-family: 'Raleway', sans-serif;
+}
+.productCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: var(--primary); */
+    margin: 2em 0;
+}
+.productCard{
+    width: 22%;
+    /* background-color: yellowgreen; */
+    padding: 0 1em;
+    box-shadow: 4px 4px 20px -5px var(--secandory);
+    margin-bottom: 1.5em;
+}
+.productCard img{
+    width: 90%;
+    margin: 0 auto;
+    display: block; /* images are inline elements so to apply margins we have to set them as block */
+    height: 300px;
+    object-fit: contain;
+}
+.productCard h2{
+    font-size: 1.8rem;
+    font-family: 'Kaushan Script', cursive;
+    color: var(--maincolor);
+}
+.actualPrice{
+    margin: 0.5em 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.price{
+    text-decoration: line-through;
+    display: inline-block; /* span tags are inline elements so to apply margins we set them as inline block */
+    margin-right: 0.5em;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+.ratings{
+    font-size: 1rem;
+    color: var(--maincolor);
+    margin: 0.5em 0;
+}
+
+/* media queries for section-3 */
+
+@media screen and (max-width: 990px){
+    .productCard{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 768px){
+    .productCard{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 568px){
+    .productCard{
+        width: 80%;
+    }
+    .title h1 {
+        font-size: 2.5rem;
+    }
+    .productCard img {
+        height: 200px;
     }
 }
