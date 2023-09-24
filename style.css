@@ -368,3 +368,33 @@ nav a{
         height: 200px;
     }
 }
+
+/* section-5 starts */
+
+.serviceText{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+/* section-7 starts */
+
+.brands{
+    flex-wrap: wrap;
+}
+.brands img{
+    width: 100px;
+    margin-bottom: 1em;
+}
+
+/* media queries for section-7 i.e brands */
+
+@media screen and (max-width: 768px){
+    .brands{
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 568px){
+    .brands{
+        flex-direction: column;
+    }
+}
