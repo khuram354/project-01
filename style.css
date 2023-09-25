@@ -18,7 +18,7 @@ font-family: 'Raleway', sans-serif; */
     --white:#fff;
 }
 
-/* navbar start */
+/* navbar starts */
 .navbar{
     max-width: 1300px;
     width: 100%;
@@ -217,7 +217,6 @@ nav a{
 }
 
 /* section-2 Start */
-
 .promotion{
     justify-content: space-between;
     margin-top: 1em;
@@ -247,7 +246,6 @@ nav a{
 }
 
 /* media queries for section-2 */
-
 @media screen and (max-width: 990px){
     .btnAll{
         width: 100%;
@@ -294,7 +292,6 @@ nav a{
 }
 
 /* section-3 starts */
-
 .title h1{
     font-size: 2.8rem;
     text-align: center;
@@ -305,12 +302,10 @@ nav a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* background-color: var(--primary); */
     margin: 2em 0;
 }
 .productCard{
     width: 22%;
-    /* background-color: yellowgreen; */
     padding: 0 1em;
     box-shadow: 4px 4px 20px -5px var(--secandory);
     margin-bottom: 1.5em;
@@ -346,7 +341,6 @@ nav a{
 }
 
 /* media queries for section-3 */
-
 @media screen and (max-width: 990px){
     .productCard{
         width: 30%;
@@ -370,14 +364,12 @@ nav a{
 }
 
 /* section-5 starts */
-
 .serviceText{
     text-align: center;
     margin-bottom: 0.5em;
 }
 
 /* section-7 starts */
-
 .brands{
     flex-wrap: wrap;
 }
@@ -387,7 +379,6 @@ nav a{
 }
 
 /* media queries for section-7 i.e brands */
-
 @media screen and (max-width: 768px){
     .brands{
         flex-direction: row;
